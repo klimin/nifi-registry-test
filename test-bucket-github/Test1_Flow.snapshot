@@ -1,0 +1,210 @@
+{
+  "header" : {
+    "dataModelVersion" : "3"
+  },
+  "content" : {
+    "flowSnapshot" : {
+      "externalControllerServices" : { },
+      "flowContents" : {
+        "comments" : "",
+        "componentType" : "PROCESS_GROUP",
+        "connections" : [ {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "ef0047dd-3784-360b-b6cb-6efe0fa1a224",
+            "id" : "a26cfc10-90e7-3ca2-a8d2-08a942c6bbe2",
+            "instanceIdentifier" : "5c1d5a8b-0191-1000-6416-3f221b009f23",
+            "name" : "UpdateAttribute",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "ef0047dd-3784-360b-b6cb-6efe0fa1a224",
+          "identifier" : "54f932df-40ed-3923-a112-62afe6b9304e",
+          "instanceIdentifier" : "5c237dff-0191-1000-a072-81f57b583e31",
+          "labelIndex" : 0,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "groupId" : "ef0047dd-3784-360b-b6cb-6efe0fa1a224",
+            "id" : "e81882e3-d58e-34d5-9942-d40a343e0175",
+            "instanceIdentifier" : "5c236f23-0191-1000-2c75-9c9f83c41bce",
+            "name" : "IN",
+            "type" : "INPUT_PORT"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "groupId" : "ef0047dd-3784-360b-b6cb-6efe0fa1a224",
+            "id" : "2cd270c3-3551-3faf-b882-34052279e8e5",
+            "instanceIdentifier" : "5c23fc45-0191-1000-0525-7daef8b15ddc",
+            "name" : "OUT",
+            "type" : "OUTPUT_PORT"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "ef0047dd-3784-360b-b6cb-6efe0fa1a224",
+          "identifier" : "8942f495-8d5d-3a19-8d60-53e15822140c",
+          "instanceIdentifier" : "5c240b54-0191-1000-979c-c0ee0a54eac6",
+          "labelIndex" : 0,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "ef0047dd-3784-360b-b6cb-6efe0fa1a224",
+            "id" : "a26cfc10-90e7-3ca2-a8d2-08a942c6bbe2",
+            "instanceIdentifier" : "5c1d5a8b-0191-1000-6416-3f221b009f23",
+            "name" : "UpdateAttribute",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        } ],
+        "controllerServices" : [ ],
+        "defaultBackPressureDataSizeThreshold" : "1 GB",
+        "defaultBackPressureObjectThreshold" : 10000,
+        "defaultFlowFileExpiration" : "0 sec",
+        "executionEngine" : "INHERITED",
+        "flowFileConcurrency" : "UNBOUNDED",
+        "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+        "funnels" : [ ],
+        "identifier" : "ef0047dd-3784-360b-b6cb-6efe0fa1a224",
+        "inputPorts" : [ {
+          "allowRemoteAccess" : true,
+          "componentType" : "INPUT_PORT",
+          "concurrentlySchedulableTaskCount" : 1,
+          "groupIdentifier" : "ef0047dd-3784-360b-b6cb-6efe0fa1a224",
+          "identifier" : "e81882e3-d58e-34d5-9942-d40a343e0175",
+          "instanceIdentifier" : "5c236f23-0191-1000-2c75-9c9f83c41bce",
+          "name" : "IN",
+          "portFunction" : "STANDARD",
+          "position" : {
+            "x" : -3504.0,
+            "y" : -1560.0
+          },
+          "scheduledState" : "ENABLED",
+          "type" : "INPUT_PORT"
+        } ],
+        "instanceIdentifier" : "5c1c9954-0191-1000-a7df-731b9e4a005b",
+        "labels" : [ ],
+        "maxConcurrentTasks" : 1,
+        "name" : "SubFlow1",
+        "outputPorts" : [ {
+          "allowRemoteAccess" : true,
+          "componentType" : "OUTPUT_PORT",
+          "concurrentlySchedulableTaskCount" : 1,
+          "groupIdentifier" : "ef0047dd-3784-360b-b6cb-6efe0fa1a224",
+          "identifier" : "2cd270c3-3551-3faf-b882-34052279e8e5",
+          "instanceIdentifier" : "5c23fc45-0191-1000-0525-7daef8b15ddc",
+          "name" : "OUT",
+          "portFunction" : "STANDARD",
+          "position" : {
+            "x" : -3488.0,
+            "y" : -1208.0
+          },
+          "scheduledState" : "ENABLED",
+          "type" : "OUTPUT_PORT"
+        } ],
+        "position" : {
+          "x" : -656.0,
+          "y" : -1328.0
+        },
+        "processGroups" : [ ],
+        "processors" : [ {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-update-attribute-nar",
+            "group" : "org.apache.nifi",
+            "version" : "2.0.0-M4"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "ef0047dd-3784-360b-b6cb-6efe0fa1a224",
+          "identifier" : "a26cfc10-90e7-3ca2-a8d2-08a942c6bbe2",
+          "instanceIdentifier" : "5c1d5a8b-0191-1000-6416-3f221b009f23",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "UpdateAttribute",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : -3528.0,
+            "y" : -1400.0
+          },
+          "properties" : {
+            "STATUS" : "DONE",
+            "Store State" : "Do not store state",
+            "canonical-value-lookup-cache-size" : "100"
+          },
+          "propertyDescriptors" : {
+            "STATUS" : {
+              "displayName" : "STATUS",
+              "dynamic" : true,
+              "identifiesControllerService" : false,
+              "name" : "STATUS",
+              "sensitive" : false
+            },
+            "Delete Attributes Expression" : {
+              "displayName" : "Delete Attributes Expression",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Delete Attributes Expression",
+              "sensitive" : false
+            },
+            "Store State" : {
+              "displayName" : "Store State",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Store State",
+              "sensitive" : false
+            },
+            "canonical-value-lookup-cache-size" : {
+              "displayName" : "Cache Value Lookup Cache Size",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "canonical-value-lookup-cache-size",
+              "sensitive" : false
+            },
+            "Stateful Variables Initial Value" : {
+              "displayName" : "Stateful Variables Initial Value",
+              "dynamic" : false,
+              "identifiesControllerService" : false,
+              "name" : "Stateful Variables Initial Value",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 25,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+          "yieldDuration" : "1 sec"
+        } ],
+        "remoteProcessGroups" : [ ],
+        "scheduledState" : "ENABLED",
+        "statelessFlowTimeout" : "1 min"
+      },
+      "flowEncodingVersion" : "1.0",
+      "parameterContexts" : { },
+      "parameterProviders" : { }
+    }
+  }
+}
